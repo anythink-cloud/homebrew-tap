@@ -7,19 +7,19 @@ class Anythink < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.0/anythink-osx-arm64"
-      sha256 "5b3ba9a8673c0de950add604cda323a284ce5971877cb1c28a927ebd6e34cb6f"
+      sha256 "77800e66e870a5e6c078b4f13097facbfbbabddf88718d87df82d499f21f9077"
 
       resource "mcp" do
         url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.0/anythink-mcp-osx-arm64"
-        sha256 "b86f189a8aa467071c761e5e21384d4689a910fb8882bc4dc90292a92efb938a"
+        sha256 "38bb1339084dcd2701222fbaf4166e4b576a100510b8e4834cc5f3890b56b7d4"
       end
     else
       url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.0/anythink-osx-x64"
-      sha256 "67ce9559dc31b94001711e7791dc20b77a5d170d9886e8cd0e560f1103a90325"
+      sha256 "cf130b1f86251fd1ceb9c4babc6dc03aae49c4ec0c7be7542fca72b07ebfd1be"
 
       resource "mcp" do
         url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.0/anythink-mcp-osx-x64"
-        sha256 "bd69cfc589827534bd3e97e3bd6e0196de23728f246767113d9dedb2265d5fcb"
+        sha256 "322c95653843f8d4b0e64fbfe28308b163e3b036573aaa2187800a871a910f33"
       end
     end
   end
@@ -27,19 +27,19 @@ class Anythink < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.0/anythink-linux-arm64"
-      sha256 "10d9bdb45723eee5a75de41a0f8ab13e5074d2ff17b24792f210e41bd720ef96"
+      sha256 "027fbb51fa0d6c57f48fa3f3a3a5dad083dcdd427098abb8903c5b7428425509"
 
       resource "mcp" do
         url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.0/anythink-mcp-linux-arm64"
-        sha256 "e1b43ccb180a97a7795fd1a11133844b8bb11366e512d4149d26047ba21b3d19"
+        sha256 "8a99b3ffd3c5b83d2c08733dc14f96965c077ccf438015aaaea90dbbf9b25d1a"
       end
     else
       url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.0/anythink-linux-x64"
-      sha256 "bdf211b926bd0f4d9325d06dbced0d1795b7195f4b60b69cae73bc0563debff8"
+      sha256 "9051f26cb16cc7c4d748664fce5b409e44fef87a410bc6069dec09c02e67e6e5"
 
       resource "mcp" do
         url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.0/anythink-mcp-linux-x64"
-        sha256 "7099d79a383993253cdd77401dd53303ff2b65c53590fac74f7cb0939f6b27bf"
+        sha256 "54ac9c5b6ec944eb4a16c0ee7efa977190ae0554ec9cf4ba9cf93daf0f571aa8"
       end
     end
   end
@@ -68,8 +68,8 @@ class Anythink < Formula
     ░██    ░██ ░██    ░██ ░██    ░██    ░██    ░██    ░██ ░██░██    ░██ ░███████
     ░██    ░██ ░██    ░██ ░██   ░███    ░██    ░██    ░██ ░██░██    ░██ ░██   ░██
     ░██    ░██ ░██    ░██  ░█████░██     ░████ ░██    ░██ ░██░██    ░██ ░██    ░██
-                                         ░██
-                                   ░███████
+                                 ░██
+                           ░███████
 
     Whatever you're building, Anythink is the backend at your service.
 
