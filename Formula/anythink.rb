@@ -7,19 +7,19 @@ class Anythink < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.0/anythink-osx-arm64"
-      sha256 "b01fe275d5b5b331d2798c7dcf2dc18035e13ea7694dcc0d9e5d2cfa9e856181"
+      sha256 "b9b17523a39a25665ee1a19fbecbaac75b55e626f0af319b6b2e1f97743e8048"
 
       resource "mcp" do
         url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.0/anythink-mcp-osx-arm64"
-        sha256 "49d79de4edf257aa7af67ec5a1f4d47cb72b0a2597ee152066412aa704fd5f6e"
+        sha256 "24fdf68d70e1ddbbd628ccb77073354de19e0a7519c94f3302aadc24ccdf2645"
       end
     else
       url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.0/anythink-osx-x64"
-      sha256 "dc4e81d9714d40464ea04fb852b0e22c047d179799f72c86b96a0f60ace7fc87"
+      sha256 "f4c2be468c77434ca2b0d0261b9418f54e8fc506fad027d47a1f765eefccab4b"
 
       resource "mcp" do
         url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.0/anythink-mcp-osx-x64"
-        sha256 "6589992074676d318b9b1ee59d7c8a2510fd3b08c9e053215f2edaa238ed092a"
+        sha256 "eba8d8e2e1622d8c110b075e5614ebfc8716a4e516a79d8db61cba0f88540e07"
       end
     end
   end
@@ -27,19 +27,19 @@ class Anythink < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.0/anythink-linux-arm64"
-      sha256 "db55f34cf9d1d7d684b2fc2dc30ad35e8b151471781fbd0a153d29024be52639"
+      sha256 "1aa569cc77d394b210130acc6400d9e8e75fff2e35a3be2da813c608c1f6bb25"
 
       resource "mcp" do
         url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.0/anythink-mcp-linux-arm64"
-        sha256 "c9dcf8391e63a12291fffa5bb9ebe25e59f7a0484a21d9b7c78f7da5db65f4a6"
+        sha256 "bb737829fbe84f1d7d93d201f3a0004fa336f2bb453e8ec60af317ae3ed4c844"
       end
     else
       url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.0/anythink-linux-x64"
-      sha256 "14552de0fc5b5f71accc3e67869812f3cba952727095c29d8059ae81e4f17cbb"
+      sha256 "50f2f31e5d6e6f2393f4df96eaba200bef59ffa74275158e3164bfca5daae572"
 
       resource "mcp" do
         url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.0/anythink-mcp-linux-x64"
-        sha256 "79230a00a20d6f841b2c2278d6432261e1e785e90f87a1c6bb3a6a8787bf4cd1"
+        sha256 "c07957a5659b2c1c2961fa22dc3beb6baba08f7001a7384cd338958c7cd5cb95"
       end
     end
   end
@@ -59,32 +59,33 @@ class Anythink < Formula
   end
 
   def caveats
+    banner = <<~'ART'
+         ░███                             ░██    ░██        ░██           ░██
+        ░██░██                            ░██    ░██                      ░██
+       ░██  ░██  ░████████  ░██    ░██ ░████████ ░████████  ░██░████████  ░██    ░██
+      ░█████████ ░██    ░██ ░██    ░██    ░██    ░██    ░██ ░██░██    ░██ ░██   ░██
+      ░██    ░██ ░██    ░██ ░██    ░██    ░██    ░██    ░██ ░██░██    ░██ ░███████
+      ░██    ░██ ░██    ░██ ░██   ░███    ░██    ░██    ░██ ░██░██    ░██ ░██   ░██
+      ░██    ░██ ░██    ░██  ░█████░██     ░████ ░██    ░██ ░██░██    ░██ ░██    ░██
+                         ░██
+                   ░███████
+    ART
     <<~EOS
+      #{banner}
+      Whatever you're building, Anythink is the backend at your service.
 
-      ░███                             ░██    ░██        ░██           ░██
-     ░██░██                            ░██    ░██                      ░██
-    ░██  ░██  ░████████  ░██    ░██ ░████████ ░████████  ░██░████████  ░██    ░██
-   ░█████████ ░██    ░██ ░██    ░██    ░██    ░██    ░██ ░██░██    ░██ ░██   ░██
-   ░██    ░██ ░██    ░██ ░██    ░██    ░██    ░██    ░██ ░██░██    ░██ ░███████
-   ░██    ░██ ░██    ░██ ░██   ░███    ░██    ░██    ░██ ░██░██    ░██ ░██   ░██
-   ░██    ░██ ░██    ░██  ░█████░██     ░████ ░██    ░██ ░██░██    ░██ ░██    ░██
-                      ░██
-                ░███████
+      Get started:
+        anythink login
 
-    Whatever you're building, Anythink is the backend at your service.
-
-    Get started:
-      anythink login
-
-    MCP Server (for AI-powered development with Claude Code):
-    Add the following to your .mcp.json:
-      {
-        "mcpServers": {
-"anythink": {
-  "command": "anythink-mcp"
+      MCP Server (for AI-powered development with Claude Code):
+      Add the following to your .mcp.json:
+        {
+"mcpServers": {
+  "anythink": {
+    "command": "anythink-mcp"
+  }
 }
         }
-      }
     EOS
   end
 
