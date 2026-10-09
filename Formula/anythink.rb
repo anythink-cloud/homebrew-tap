@@ -1,45 +1,45 @@
 class Anythink < Formula
   desc "CLI and MCP server for the Anythink backend-as-a-service platform"
   homepage "https://github.com/anythink-cloud/anythink-cli"
-  version "0.2.28"
+  version "0.2.29"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.28/anythink-osx-arm64"
-      sha256 "b271b6a6436a8443ef84e989feb92c565a4b0d5e8c1ff02af099d5a852577f3f"
+      url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.29/anythink-osx-arm64"
+      sha256 "2746da985d3d6a2d12120cefa42af0b6dd6156fe4a25274091890ecfc0b61f5a"
 
       resource "mcp" do
-        url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.28/anythink-mcp-osx-arm64"
-        sha256 "6151d4c587c2bbbb1d272cdeacd669aac3d6310979ad1560c6b549aa45a01e31"
+        url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.29/anythink-mcp-osx-arm64"
+        sha256 "0619451c7bfc7d03eda173b4a9f9067354cce194f1d8a8a36d61780e27f8d09c"
       end
     else
-      url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.28/anythink-osx-x64"
-      sha256 "798c7b2a9b08545566c44428c8ad9df45c6af3b1dfc0d6478dc1463ae20af754"
+      url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.29/anythink-osx-x64"
+      sha256 "a9ffa00acf0ab27e8dc61791ef9baf64e038e93b0cceeaeeba20ac7cca6c221f"
 
       resource "mcp" do
-        url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.28/anythink-mcp-osx-x64"
-        sha256 "6087fb04167dcbe5ca0d63d4b0400c128904c18f1bf50d221ab7389faf6533ef"
+        url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.29/anythink-mcp-osx-x64"
+        sha256 "bbb32189e44c93879386f9da280151da55af5ed44fd13b40e15f3d2edad22b2d"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.28/anythink-linux-arm64"
-      sha256 "97f91b4034f7bf7d677e967f90212470542d5068f1f7defb22f0046863064e21"
+      url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.29/anythink-linux-arm64"
+      sha256 "422e2abe132eb5f27d71c999a7fb43ddcacfaa7931b90c4533fd9c556c71123b"
 
       resource "mcp" do
-        url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.28/anythink-mcp-linux-arm64"
-        sha256 "750e4ae238e53cc1b79cef5b9de921be006237ae8f8561dc4c22aaaa44bd8e0a"
+        url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.29/anythink-mcp-linux-arm64"
+        sha256 "7711a088c19e49040eebf1a3b64dddb6ebcfb46e2199edc1aa6e0c942a57a531"
       end
     else
-      url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.28/anythink-linux-x64"
-      sha256 "d603900c6500b4c72a5be14447608b9c73b2f9291f77ab972b657e4d1c6d302b"
+      url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.29/anythink-linux-x64"
+      sha256 "c2356ca6240d76667ef8b9ec67f3ae93a108167de30b2394c0ff5244eab44cc9"
 
       resource "mcp" do
-        url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.28/anythink-mcp-linux-x64"
-        sha256 "3a03bafd8a19762d56fd8f31296d1c237e8f51ff023a47eb7e165fc5715a43a9"
+        url "https://github.com/anythink-cloud/anythink-cli/releases/download/v0.2.29/anythink-mcp-linux-x64"
+        sha256 "04d3582bcba03a8e13f26edeae46c2fdfbe6f3acd8aeac8d1f4997d849760952"
       end
     end
   end
